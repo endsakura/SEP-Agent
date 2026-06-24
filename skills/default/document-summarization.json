@@ -1,0 +1,13 @@
+{
+  "slug": "document-summarization",
+  "name": "Document Summarization",
+  "description": "读取文档或长文本，提取要点并生成结构化摘要",
+  "type": "atomic",
+  "triggers": ["总结", "摘要", "summarize", "概括", "文档总结", "太长", "提炼要点"],
+  "steps": [
+    { "action": "确认文档路径或内容来源" },
+    { "action": "读取文档全文", "tool": "read_file" },
+    { "action": "提取：主题、关键论点、重要数据/步骤" },
+    { "action": "输出结构化摘要（bullet points 或分段）" }
+  ]
+}

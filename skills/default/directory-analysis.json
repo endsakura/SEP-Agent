@@ -1,0 +1,13 @@
+{
+  "slug": "directory-analysis",
+  "name": "Directory Analysis",
+  "description": "分析目录结构，识别项目类型、关键文件和目录布局",
+  "type": "domain",
+  "triggers": ["目录", "文件夹", "项目结构", "directory", "list files", "分析目录"],
+  "steps": [
+    { "action": "确认目标目录路径", "tool": "list_directory", "params": { "path": "." } },
+    { "action": "列出目录内容，区分文件与子目录" },
+    { "action": "识别配置文件、源码目录、文档等关键路径" },
+    { "action": "输出结构化目录摘要：树形概览 + 各目录用途说明" }
+  ]
+}

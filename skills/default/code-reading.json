@@ -1,0 +1,14 @@
+{
+  "slug": "code-reading",
+  "name": "Code Reading",
+  "description": "阅读并理解代码文件，解释模块职责、依赖关系和核心逻辑",
+  "type": "domain",
+  "triggers": ["读代码", "解释代码", "代码结构", "code review", "这个文件干什么", "read code"],
+  "steps": [
+    { "action": "定位目标文件或模块路径" },
+    { "action": "读取源码文件", "tool": "read_file" },
+    { "action": "识别 imports、exports、主要函数/类" },
+    { "action": "解释代码职责、数据流和与其他模块的关系" },
+    { "action": "FINAL ANSWER: 给出清晰的中文代码解读" }
+  ]
+}

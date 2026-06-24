@@ -1,0 +1,9 @@
+[
+  {
+    "name": "filesystem",
+    "transport": "stdio",
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-filesystem", "D:\\"],
+    "enabled": true
+  }
+]

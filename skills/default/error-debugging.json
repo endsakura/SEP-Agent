@@ -1,0 +1,14 @@
+{
+  "slug": "error-debugging",
+  "name": "Error Debugging",
+  "description": "分析错误信息，定位根因并提出修复方案",
+  "type": "domain",
+  "triggers": ["报错", "错误", "debug", "失败", "exception", "error", "调试", "fix bug"],
+  "steps": [
+    { "action": "解析错误信息：错误类型、堆栈、涉及文件/行号" },
+    { "action": "读取出错相关源文件", "tool": "read_file", "condition": "错误信息包含文件路径" },
+    { "action": "对比预期行为与实际行为，推断根因" },
+    { "action": "提出具体修复步骤；若可安全修复，使用 write_file 应用补丁" },
+    { "action": "说明修复理由和验证方法" }
+  ]
+}

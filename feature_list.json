@@ -1,0 +1,26 @@
+{
+  "completed": [
+    "L1 Memory (sliding window)",
+    "L2 Event Memory (vector store)",
+    "L3 Long-term Summary",
+    "ReAct Planner",
+    "Reflection Engine",
+    "Skill Evolution (v1-v4)",
+    "MCP Integration (stdio/SSE)",
+    "Failure Re-plan (max 5 retries)",
+    "Electron UI (Chat/Memory/Skills)",
+    "AGENTS.md System Prompt Injection"
+  ],
+  "in_progress": [
+    "Skill Scoring refinement",
+    "Product Evolution (feature_list + progress)"
+  ],
+  "planned": [
+    "RAG Integration",
+    "Code Agent",
+    "Browser Agent",
+    "Real Web Search API",
+    "Multi-MCP orchestration",
+    "Skill marketplace / export"
+  ]
+}

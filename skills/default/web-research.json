@@ -1,0 +1,13 @@
+{
+  "slug": "web-research",
+  "name": "Web Research",
+  "description": "搜索网络信息，汇总可靠结论并注明来源局限",
+  "type": "atomic",
+  "triggers": ["搜索", "查一下", "web search", "网上", "最新", "research", "查询资料"],
+  "steps": [
+    { "action": "提炼搜索关键词，明确信息需求" },
+    { "action": "执行网络搜索", "tool": "web_search" },
+    { "action": "筛选与问题最相关的结果" },
+    { "action": "综合多条信息给出结论，标注不确定性" }
+  ]
+}

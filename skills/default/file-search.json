@@ -1,0 +1,13 @@
+{
+  "slug": "file-search",
+  "name": "File Search",
+  "description": "在目录中查找匹配名称或类型的文件，并返回路径列表",
+  "type": "atomic",
+  "triggers": ["找文件", "搜索文件", "find file", "where is", "哪个文件", "file search"],
+  "steps": [
+    { "action": "确定搜索根目录和匹配条件（文件名/扩展名/关键词）" },
+    { "action": "列出目录内容", "tool": "list_directory" },
+    { "action": "筛选匹配的文件路径", "condition": "存在子目录时逐层探索" },
+    { "action": "返回匹配文件列表及简要说明" }
+  ]
+}
